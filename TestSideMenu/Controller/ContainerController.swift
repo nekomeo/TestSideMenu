@@ -14,8 +14,23 @@ class ContainerController: UIViewController {
     // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureHomeController()
     }
     
     // MARK: - Handlers
+    
+    func configureHomeController() {
+        let homeController = HomeController()
+        let controller = UINavigationController(rootViewController: homeController)
+        
+        view.addSubview(controller.view)
+        addChild(controller)
+        controller.didMove(toParent: self)
+    }
+    
+    func configureMenuController() {
+//        let menuController = MenuController()
+    }
     
 }

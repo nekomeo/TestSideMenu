@@ -14,6 +14,8 @@ class HomeController: UIViewController {
     // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .purple
     }
     
     // MARK: - Handlers
